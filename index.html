@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
     <title>BrightNest Edu | Fun Phonics & Maths for Kids</title>
     <meta name="description" content="BrightNest Edu offers fun, engaging, and cartoonish phonics and maths lessons for young children. Spark your child's love for learning with our interactive programs and AI story generator!">
     <meta name="keywords" content="edtech, phonics for kids, maths for children, early learning, education technology, fun learning, brightnest edu, modern learning , online english tuitions , online tuitions for kids , kid education, modern education ,english sound education ,">
@@ -13,22 +12,19 @@
     <link rel="canonical" href="https://brightnestedu.online/">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Facebook Meta Tags (for social sharing) -->
     <meta property="og:title" content="BrightNest Edu | Fun Phonics & Maths for Kids">
     <meta property="og:description" content="Discover a bright adventure in learning! We make phonics and maths fun and exciting for young learners.">
     <meta property="og:image" content="https://placehold.co/1200x630/a0c4ff/ffffff?text=BrightNest+Edu">
     <meta property="og:url" content="https://brightnestedu.online/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="BrightNest Edu | Fun Phonics & Maths for Kids">
     <meta name="twitter:description" content="Discover a bright adventure in learning! We make phonics and maths fun and exciting for young learners.">
     <meta name="twitter:image" content="https://placehold.co/1200x630/a0c4ff/ffffff?text=BrightNest+Edu">
 
     
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CDVEQZ5KT"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CDVEQZ5KT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -36,15 +32,12 @@
   gtag('config', 'G-9CDVEQZ5KT');
 </script>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Fredoka One for headings, Balsamiq Sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
     
-    <!-- Custom Styles -->
     <style>
         body {
             font-family: 'Balsamiq Sans', cursive;
@@ -78,42 +71,18 @@
         .cloud-fast {
             animation-duration: 10s;
         }
-        .loader {
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #C084FC;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
+        
+        /* New Animation for Floating Button */
+        .zoom-pulse {
+             animation: pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .section-bg {
-            position: relative;
-            overflow: hidden;
-        }
-        nav a {
-            transition: transform 0.2s ease-in-out;
-        }
-        nav a:hover {
-            animation: bounce 0.5s ease;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0) rotate(0); }
-            25% { transform: translateY(-5px) rotate(-3deg); }
-            75% { transform: translateY(-5px) rotate(3deg); }
-        }
-
-        .wiggle-button {
-            animation: wiggle 1.5s ease-in-out infinite;
-        }
-
-        @keyframes wiggle {
-            0%, 100% { transform: rotate(0); }
-            25% { transform: rotate(-3deg); }
-            75% { transform: rotate(3deg); }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         .contact-item {
@@ -147,7 +116,6 @@
         }
     </style>
     
-    <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -168,46 +136,33 @@
 </head>
 <body class="text-gray-700">
 
-    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-md">
         <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-            <!-- Logo -->
             <a href="#" class="flex items-center space-x-2">
-                <!-- LOGO: Using a reliable placeholder. Replace with a direct link to a .jpg or .png file. -->
                 <img src="Logo.jpg" alt="BrightNest Edu Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full">
                 <span class="text-2xl sm:text-3xl font-bold text-gray-800">BrightNest Edu</span>
             </a>
             
-            <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-6 items-center text-lg font-bold">
                 <a href="#about" class="text-gray-600 hover:text-pink-500">About Us</a>
                 <a href="#programs" class="text-gray-600 hover:text-pink-500">Programs</a>
                 <a href="#contact" class="text-gray-600 hover:text-pink-500">Contact</a>
-                <button id="open-demo-modal" class="inline-block px-6 py-3 text-base font-bold text-gray-800 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:transform hover:-translate-y-1 active:transform active:translate-y-0 active:shadow-md bg-pink-300 hover:bg-pink-400">Book a Demo</button>
             </nav>
             
-            <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
                 <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" /></svg>
             </button>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
             <a href="#about" class="block py-3 px-4 text-lg font-bold hover:bg-yellow-100">About Us</a>
             <a href="#programs" class="block py-3 px-4 text-lg font-bold hover:bg-yellow-100">Programs</a>
             <a href="#contact" class="block py-3 px-4 text-lg font-bold hover:bg-yellow-100">Contact</a>
-            <div class="p-4">
-                 <button id="open-demo-modal-mobile" class="w-full inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold text-gray-800 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:transform hover:-translate-y-1 active:transform active:translate-y-0 active:shadow-md bg-pink-300 hover:bg-pink-400">Book a Free Demo</button>
-            </div>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section class="section-bg py-20 md:py-32">
-            <!-- Decorative Clouds -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud" style="top: 10%; left: 5%; width: 150px; opacity: 0.5;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud cloud-fast" style="top: 20%; right: 10%; width: 120px; animation-delay: -5s;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud" style="bottom: 15%; left: 20%; width: 140px; animation-delay: -10s;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
@@ -227,7 +182,6 @@
             </div>
         </section>
 
-        <!-- About Us Section -->
         <section id="about" class="section-bg py-20 sm:py-24 bg-pink-50">
              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud" style="top: 50%; right: -5%; width: 200px; animation-delay: -15s;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud cloud-fast" style="bottom: 10%; left: -5%; width: 150px;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
@@ -235,7 +189,6 @@
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="floating">
                         <div class="bg-blue-200 p-4 rounded-3xl shadow-lg">
-                           <!-- IMAGE FIX: The .heic format is not web-compatible. Please convert your image to .jpg or .png and replace this placeholder. -->
                            <img src="flying kid.jpeg" alt="Child in a rocket costume flying" class="rounded-2xl w-full">
                         </div>
                     </div>
@@ -252,7 +205,6 @@
             </div>
         </section>
 
-        <!-- Our Programs Section -->
         <section id="programs" class="section-bg py-20 sm:py-24">
              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud" style="top: 10%; left: 5%; width: 180px; animation-delay: -2s;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud cloud-fast" style="top: 20%; right: 10%; width: 130px; animation-delay: -7s;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
@@ -264,7 +216,6 @@
                     </p>
                 </div>
                 <div class="mt-16 grid md:grid-cols-2 gap-8 sm:gap-12">
-                    <!-- Phonics Card -->
                     <div id="open-phonics-roadmap" class="program-card bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg transition-transform duration-300 ease-in-out hover:transform hover:-translate-y-2 hover:shadow-xl text-center cursor-pointer">
                         <div class="card-icon inline-block p-4 sm:p-5 bg-orange-200 rounded-full">
                            <svg class="w-14 h-14 sm:w-16 sm:h-16 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
@@ -273,9 +224,8 @@
                         <p class="mt-4 text-base sm:text-lg text-gray-600">
                            Complete info our Phonics program coming soon.
                         </p>
-                        <p class="mt-6 inline-block rounded-full px-4 py-2 font-bold bg-purple-200 text-purple-800 wiggle-button">Click to Explore Program Roadmap</p>
+                        <p class="mt-6 inline-block rounded-full px-4 py-2 font-bold bg-purple-200 text-purple-800">Click to Explore Program Roadmap</p>
                     </div>
-                    <!-- Maths Card -->
                     <div id="open-maths-roadmap" class="program-card bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg transition-transform duration-300 ease-in-out hover:transform hover:-translate-y-2 hover:shadow-xl text-center cursor-pointer">
                         <div class="card-icon inline-block p-4 sm:p-5 bg-teal-200 rounded-full">
                             <svg class="w-14 h-14 sm:w-16 sm:h-16 text-teal-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -284,55 +234,12 @@
                         <p class="mt-4 text-base sm:text-lg text-gray-600">
                            Complete info our Maths program coming soon.
                         </p>
-                         <p class="mt-6 inline-block rounded-full px-4 py-2 font-bold bg-purple-200 text-purple-800 wiggle-button">Click to Explore Program Roadmap</p>
+                         <p class="mt-6 inline-block rounded-full px-4 py-2 font-bold bg-purple-200 text-purple-800">Click to Explore Program Roadmap</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- AI Story Generator Section -->
-        <section id="ai-story-generator" class="section-bg py-20 sm:py-24 bg-purple-50">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud" style="bottom: 10%; right: -5%; width: 220px; animation-delay: -12s;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
-            <div class="container mx-auto px-4 relative">
-                <div class="text-center max-w-2xl mx-auto">
-                    <h2 class="text-4xl sm:text-5xl font-bold text-gray-800">✨ AI Story Generator</h2>
-                    <p class="mt-4 text-lg sm:text-xl text-gray-700">
-                        Let's create a story! Type a fun idea below and our AI will write a magical tale just for you.
-                    </p>
-                </div>
-                <div class="mt-12 max-w-2xl mx-auto">
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <input type="text" id="story-topic" class="w-full text-lg px-6 py-4 rounded-full border-2 border-gray-300 focus:border-purple-400 focus:ring focus:ring-purple-200 focus:ring-opacity-50 transition-colors" placeholder="E.g., a friendly dragon">
-                        <button id="generate-story-btn" class="flex-shrink-0 inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold text-gray-800 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:transform hover:-translate-y-1 active:transform active:translate-y-0 active:shadow-md bg-purple-300 hover:bg-purple-400 disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-md">Create Story!</button>
-                    </div>
-                    
-                    <div id="story-image-container" class="mt-8 hidden">
-                        <div id="image-loader-container" class="w-full aspect-video bg-white/80 rounded-3xl flex items-center justify-center">
-                            <div class="loader"></div>
-                        </div>
-                        <img id="story-image" src="" alt="AI generated illustration for the story" class="rounded-3xl shadow-lg w-full">
-                    </div>
-
-                    <div id="story-output-container" class="mt-8 bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg min-h-[200px] flex items-center justify-center">
-                        <div id="story-loader" class="hidden loader"></div>
-                        <p id="story-output" class="text-gray-700 text-lg leading-relaxed"></p>
-                        <p id="story-placeholder" class="text-gray-400 text-lg font-bold">Your magical story will appear here...</p>
-                    </div>
-
-                    <div id="story-controls" class="mt-6 flex flex-col sm:flex-row gap-4 justify-center hidden">
-                        <button id="read-story-btn" class="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold text-gray-800 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:transform hover:-translate-y-1 active:transform active:translate-y-0 active:shadow-md bg-yellow-300 hover:bg-yellow-400 disabled:bg-gray-300 disabled:text-gray-500">
-                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
-                            <span id="read-story-btn-text">✨ Read Story Aloud</span>
-                        </button>
-                        <button id="illustrate-story-btn" class="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold text-gray-800 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:transform hover:-translate-y-1 active:transform active:translate-y-0 active:shadow-md bg-pink-300 hover:bg-pink-400 disabled:bg-gray-300 disabled:text-gray-500">✨ Illustrate Story</button>
-                    </div>
-                     <audio id="story-audio" class="hidden"></audio>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
         <section id="contact" class="section-bg py-20 sm:py-24 bg-pink-50">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" class="cloud" style="top: 15%; left: -2%; width: 160px; animation-delay: -8s;"><g fill-opacity="0.6" fill="#ffffff"><path d="M 37.35,85.2 C 19.2,85.2 4.5,70.5 4.5,52.35 c 0,-16.2 11.7,-29.85 27,-31.95 C 36,13.8 42.15,9 49.8,9 c 9.9,0 18,8.1 18,18 v 0 c 4.35,-3.15 9.75,-5.1 15.6,-5.1 c 12.3,0 22.5,10.2 22.5,22.5 c 0,3.75 -0.9,7.2 -2.55,10.35 c 7.65,2.4 13.2,9.3 13.2,17.55 C 116.55,75.45 106.35,85.2 94.2,85.2 H 37.35 z"/></g></svg>
             <div class="container mx-auto px-4 relative">
@@ -344,11 +251,11 @@
                 </div>
                 <div class="mt-12 max-w-xl mx-auto bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg">
                     <div class="space-y-6">
-                        <a href="mailto:hello@brightnesteducation.com" class="contact-item flex items-center space-x-4 p-4 bg-yellow-100 rounded-full">
-                            <div class="p-3 bg-yellow-200 rounded-full">
+                        <a href="mailto:brightnesteducation@gmail.com" class="contact-item flex items-center space-x-4 p-4 bg-yellow-100 rounded-full break-all">
+                            <div class="p-3 bg-yellow-200 rounded-full flex-shrink-0">
                                 <svg class="w-8 h-8 text-yellow-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
                             </div>
-                            <span class="text-base sm:text-xl font-bold text-gray-700 hover:underline">brightnesteducation@gmail.com</span>
+                            <span class="text-base sm:text-xl font-bold text-gray-700 hover:underline max-w-full block">brightnesteducation@gmail.com</span>
                         </a>
                          <a href="tel:+918958272149" class="contact-item flex items-center space-x-4 p-4 bg-blue-100 rounded-full">
                             <div class="p-3 bg-blue-200 rounded-full">
@@ -365,13 +272,17 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button id="open-demo-modal-fixed" class="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold text-gray-800 rounded-full shadow-2xl transition-all duration-300 ease-in-out hover:shadow-3xl hover:transform hover:-translate-y-2 active:transform active:translate-y-0 active:shadow-md bg-green-400 hover:bg-green-500 zoom-pulse">
+            Book a Demo!
+        </button>
+    </div>
+    
     <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-12">
             <div class="text-center">
                 <a href="#" class="flex justify-center items-center space-x-2">
-                    <!-- Footer Logo Placeholder -->
-                    <img src="https://placehold.co/40x40/FBBF24/FFFFFF?text=B" alt="BrightNest Edu Logo" class="h-10 w-10 rounded-full">
+                    <img src="Logo.jpg" alt="BrightNest Edu Logo" class="h-10 w-10 rounded-full">
                     <span class="text-2xl font-bold">BrightNest Edu</span>
                 </a>
                 <p class="mt-4 font-bold">&copy; <span id="year">2024</span> BrightNest Edu. All Rights Reserved.</p>
@@ -380,7 +291,6 @@
         </div>
     </footer>
 
-    <!-- Demo Booking Modal -->
     <div id="demo-modal" class="modal-overlay hidden">
         <div class="modal-content bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-lg w-11/12 max-w-lg mx-auto">
             <div class="flex justify-between items-center mb-4">
@@ -422,6 +332,7 @@
                             <option value="05:00 PM - 06:00 PM">05:00 PM - 06:00 PM</option>
                             <option value="06:00 PM - 07:00 PM">06:00 PM - 07:00 PM</option>
                             <option value="07:00 PM - 08:00 PM">07:00 PM - 08:00 PM</option>
+                            <option value="08:00 PM - 09:00 PM">08:00 PM - 09:00 PM</option>
                         </select>
                     </div>
                     <div>
@@ -445,7 +356,6 @@
         </div>
     </div>
     
-    <!-- Roadmap Modal -->
     <div id="roadmap-modal" class="modal-overlay hidden">
         <div class="modal-content bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-3xl shadow-lg w-11/12 max-w-4xl mx-auto">
             <div class="flex justify-between items-center mb-4">
@@ -459,7 +369,6 @@
     </div>
 
 
-    <!-- JavaScript for Modals, Menu, and AI Story Generator -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             
@@ -475,17 +384,15 @@
 
             // --- Demo Modal ---
             const demoModal = document.getElementById('demo-modal');
-            const openDemoModalBtn = document.getElementById('open-demo-modal');
-            const openDemoModalBtnMobile = document.getElementById('open-demo-modal-mobile');
             const closeDemoModalBtn = document.getElementById('close-demo-modal');
+            const openDemoModalBtnFixed = document.getElementById('open-demo-modal-fixed');
             
             function openDemoModal() { demoModal.classList.remove('hidden'); }
             function closeDemoModal() { demoModal.classList.add('hidden'); }
 
-            openDemoModalBtn.addEventListener('click', openDemoModal);
-            openDemoModalBtnMobile.addEventListener('click', openDemoModal);
             closeDemoModalBtn.addEventListener('click', closeDemoModal);
-            
+            openDemoModalBtnFixed.addEventListener('click', openDemoModal); 
+
             demoModal.addEventListener('click', (e) => {
                 if (e.target === demoModal) {
                     closeDemoModal();
@@ -500,7 +407,6 @@
             const roadmapImageEl = document.getElementById('roadmap-image');
             const roadmapTitle = document.getElementById('roadmap-title');
 
-            // IMPORTANT: Replace these placeholder URLs with your actual roadmap image URLs
             const phonicsRoadmapUrl = 'https://placehold.co/1200x800/fed7aa/4b5563?text=Phonics+Roadmap';
             const mathsRoadmapUrl = 'https://placehold.co/1200x800/99f6e4/4b5563?text=Maths+Roadmap';
             
@@ -584,226 +490,12 @@
                         .catch(error => {
                             console.error('Error!', error.message);
                             feedbackMessage.textContent = 'Oops! Something went wrong. Please try again.';
-                            formFeedback.classList.remove('hidden');
                             submitDemoBtn.disabled = false;
                             submitDemoBtn.textContent = 'Submit Request';
                         });
                 });
             }
-
-            // --- AI Story Generator ---
-            const generateBtn = document.getElementById('generate-story-btn');
-            const storyTopicInput = document.getElementById('story-topic');
-            const storyOutput = document.getElementById('story-output');
-            const storyLoader = document.getElementById('story-loader');
-            const storyPlaceholder = document.getElementById('story-placeholder');
-            
-            const storyControls = document.getElementById('story-controls');
-            const readStoryBtn = document.getElementById('read-story-btn');
-            const readStoryBtnText = document.getElementById('read-story-btn-text');
-            const illustrateStoryBtn = document.getElementById('illustrate-story-btn');
-            const storyAudio = document.getElementById('story-audio');
-
-            const storyImageContainer = document.getElementById('story-image-container');
-            const storyImage = document.getElementById('story-image');
-            const imageLoaderContainer = document.getElementById('image-loader-container');
-
-
-            // --- Helper functions for API calls ---
-            const apiKey = ""; // IMPORTANT: Keep this empty for security.
-
-            async function fetchWithBackoff(url, payload, retries = 3, delay = 1000) {
-                for (let i = 0; i < retries; i++) {
-                    try {
-                        const response = await fetch(url, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-                        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                        return await response.json();
-                    } catch (error) {
-                        if (i === retries - 1) throw error;
-                        await new Promise(res => setTimeout(res, delay * Math.pow(2, i)));
-                    }
-                }
-            }
-            
-            // --- Helper functions for Audio Processing ---
-            function base64ToArrayBuffer(base64) {
-                const binaryString = window.atob(base64);
-                const len = binaryString.length;
-                const bytes = new Uint8Array(len);
-                for (let i = 0; i < len; i++) {
-                    bytes[i] = binaryString.charCodeAt(i);
-                }
-                return bytes.buffer;
-            }
-
-            function pcmToWav(pcmData, sampleRate) {
-                const header = new ArrayBuffer(44);
-                const view = new DataView(header);
-                
-                // RIFF identifier
-                writeString(view, 0, 'RIFF');
-                // file length
-                view.setUint32(4, 36 + pcmData.byteLength, true);
-                // RIFF type
-                writeString(view, 8, 'WAVE');
-                // format chunk identifier
-                writeString(view, 12, 'fmt ');
-                // format chunk length
-                view.setUint32(16, 16, true);
-                // sample format (raw)
-                view.setUint16(20, 1, true);
-                // channel count
-                view.setUint16(22, 1, true);
-                // sample rate
-                view.setUint32(24, sampleRate, true);
-                // byte rate (sample rate * block align)
-                view.setUint32(28, sampleRate * 2, true);
-                // block align (channel count * bytes per sample)
-                view.setUint16(32, 2, true);
-                // bits per sample
-                view.setUint16(34, 16, true);
-                // data chunk identifier
-                writeString(view, 36, 'data');
-                // data chunk length
-                view.setUint32(40, pcmData.byteLength, true);
-
-                function writeString(view, offset, string) {
-                    for (let i = 0; i < string.length; i++) {
-                        view.setUint8(offset + i, string.charCodeAt(i));
-                    }
-                }
-
-                return new Blob([header, pcmData], { type: 'audio/wav' });
-            }
-
-
-            function resetStoryUI() {
-                storyControls.classList.add('hidden');
-                storyImageContainer.classList.add('hidden');
-                storyImage.src = '';
-                storyAudio.src = '';
-            }
-
-            generateBtn.addEventListener('click', async () => {
-                const topic = storyTopicInput.value.trim();
-                if (!topic) {
-                    storyPlaceholder.classList.add('hidden');
-                    storyOutput.textContent = 'Please enter a topic for your story!';
-                    return;
-                }
-
-                resetStoryUI();
-                storyOutput.textContent = '';
-                storyPlaceholder.classList.add('hidden');
-                storyLoader.classList.remove('hidden');
-                generateBtn.disabled = true;
-                illustrateStoryBtn.disabled = false;
-                readStoryBtn.disabled = false;
-
-                const prompt = `Write a short, simple, and fun story for a young child (around 4-7 years old) about the following topic: "${topic}". The story should be cheerful, easy to understand, and have a happy ending.`;
-                const textPayload = { contents: [{ parts: [{ text: prompt }] }] };
-                const textApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-                try {
-                    const result = await fetchWithBackoff(textApiUrl, textPayload);
-                    if (result.candidates && result.candidates[0]?.content?.parts?.[0]) {
-                        const storyText = result.candidates[0].content.parts[0].text;
-                        storyOutput.textContent = storyText.replace(/\*/g, '');
-                        storyControls.classList.remove('hidden');
-                    } else {
-                        throw new Error("Invalid response structure from API.");
-                    }
-                } catch (error) {
-                    console.error('Error generating story:', error);
-                    storyOutput.textContent = 'Oh no! Our storybook seems to be stuck. Please try again in a moment.';
-                } finally {
-                    storyLoader.classList.add('hidden');
-                    generateBtn.disabled = false;
-                }
-            });
-
-            readStoryBtn.addEventListener('click', async () => {
-                const storyText = storyOutput.textContent;
-                if (!storyText) return;
-
-                readStoryBtn.disabled = true;
-                readStoryBtnText.textContent = 'Generating Audio...';
-
-                const ttsPayload = {
-                    contents: [{
-                        parts: [{ text: `Say in a cheerful, friendly voice for a child: ${storyText}` }]
-                    }],
-                    generationConfig: {
-                        responseModalities: ["AUDIO"],
-                    },
-                    model: "gemini-2.5-flash-preview-tts"
-                };
-                const ttsApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;
-
-                try {
-                    const result = await fetchWithBackoff(ttsApiUrl, ttsPayload);
-                    const part = result?.candidates?.[0]?.content?.parts?.[0];
-                    const audioData = part?.inlineData?.data;
-                    const mimeType = part?.inlineData?.mimeType;
-
-                    if (audioData && mimeType && mimeType.startsWith("audio/")) {
-                        const sampleRate = parseInt(mimeType.match(/rate=(\d+)/)[1], 10);
-                        const pcmData = base64ToArrayBuffer(audioData);
-                        const pcm16 = new Int16Array(pcmData);
-                        const wavBlob = pcmToWav(pcm16, sampleRate);
-                        const audioUrl = URL.createObjectURL(wavBlob);
-                        storyAudio.src = audioUrl;
-                        storyAudio.play();
-                    } else {
-                        throw new Error("Audio data not found in response.");
-                    }
-                } catch(error) {
-                    console.error('Error generating audio:', error);
-                    alert('Sorry, we could not read the story aloud right now.');
-                } finally {
-                    readStoryBtn.disabled = false;
-                    readStoryBtnText.textContent = '✨ Read Story Aloud';
-                }
-            });
-
-            illustrateStoryBtn.addEventListener('click', async () => {
-                const topic = storyTopicInput.value.trim();
-                if (!topic) return;
-
-                illustrateStoryBtn.disabled = true;
-                storyImage.src = '';
-                storyImage.style.display = 'none';
-                imageLoaderContainer.style.display = 'flex';
-                storyImageContainer.classList.remove('hidden');
-
-                const imagePrompt = `A simple, cute, and happy cartoon illustration for a children's storybook about ${topic}. Bright colors, friendly characters, minimalist background.`;
-                const imagePayload = { instances: [{ prompt: imagePrompt }], parameters: { "sampleCount": 1} };
-                const imageApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
-
-                try {
-                    const result = await fetchWithBackoff(imageApiUrl, imagePayload);
-                    if (result.predictions && result.predictions[0]?.bytesBase64Encoded) {
-                        storyImage.src = `data:image/png;base64,${result.predictions[0].bytesBase64Encoded}`;
-                        storyImage.style.display = 'block';
-                        imageLoaderContainer.style.display = 'none';
-                    } else {
-                         throw new Error("Image data not found in response.");
-                    }
-                } catch(error) {
-                    console.error('Error generating image:', error);
-                    storyImageContainer.classList.add('hidden');
-                    alert('Sorry, we could not create an illustration right now.');
-                } finally {
-                    illustrateStoryBtn.disabled = false;
-                }
-            });
         });
     </script>
 </body>
 </html>
-
-
